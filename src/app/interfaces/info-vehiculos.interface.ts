@@ -3,4 +3,5 @@ export interface InfoVehiculo {
     modelo?: string;
     kilometros?: string;
     urlImagen?: string;
+    precio?: string;
   }

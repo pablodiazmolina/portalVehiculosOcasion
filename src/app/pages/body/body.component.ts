@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { VehiculosService } from '../../services/vehiculos.service';
+
 
 @Component({
   selector: 'app-body',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  constructor( public infoVehiculos: VehiculosService) { }
 
   ngOnInit() {
   }
