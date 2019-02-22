@@ -8,6 +8,5 @@ import { VehiculosService } from './services/vehiculos.service';
   styleUrls: ['./app.component.styl']
 })
 export class AppComponent {
-  constructor( public infoPaginaService: InfoPaginaService,
-               public vehiculosService: VehiculosService ) { }
+  constructor( public infoPaginaService: InfoPaginaService ) { }
 }

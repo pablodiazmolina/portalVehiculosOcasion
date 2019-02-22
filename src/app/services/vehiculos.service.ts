@@ -15,9 +15,9 @@ export class VehiculosService {
   }
 
   private cargarVehiculos() {
-          this.http.get( 'https://angular-citroen-hita.firebaseio.com/vehiculo.json' ).subscribe( (resp: InfoVehiculo []) => {
-         this.vehiculos = resp;
-         this.cargando = false;
-       });
-     }
+    this.http.get( 'https://angular-citroen-hita.firebaseio.com/vehiculo.json' ).subscribe( (resp: InfoVehiculo []) => {
+      this.vehiculos = resp;
+      this.cargando = false;
+    });
+  }
 }
