@@ -24,9 +24,9 @@
   </div>
 
   <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4" *ngIf="!infoVehiculos.cargando">
-    <a *ngFor="let vehiculo of infoVehiculos.vehiculos" [routerLink]="['/detail', vehiculo.marca ]" class="rk-item ae-masonry__item">
+    <a *ngFor="let vehiculo of infoVehiculos.vehiculos" [routerLink]="['/detail', vehiculo.id ]" class="rk-item ae-masonry__item">
       <img src="{{vehiculo.urlImagen}}" alt="">
-      <div class="item-meta">
+      <div [routerLink]="['/detail', vehiculo.id ]" class="item-meta">
         <h2>{{vehiculo.marca}} {{vehiculo.modelo}}</h2>
         <p>{{vehiculo.precio}} euros</p>
       </div>
