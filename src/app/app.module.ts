@@ -9,6 +9,7 @@ import { BodyComponent } from './pages/body/body.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailComponent } from './pages/detail/detail.component';
+import { BusquedaComponent } from './pages/busqueda/busqueda.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DetailComponent } from './pages/detail/detail.component';
     FooterComponent,
     BodyComponent,
     ContactComponent,
-    DetailComponent
+    DetailComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,
