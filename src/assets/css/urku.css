@@ -91,7 +91,7 @@ body {
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  font-size: 1.375rem;
+  font-size: 2.375rem;
   font-weight: 700;
   letter-spacing: 2.25px;
   text-align: center;
@@ -1273,7 +1273,6 @@ body {
   -ms-flex-align: end;
           align-items: flex-end;
   height: 100vh;
-  padding-bottom: 1.5rem;
   width: 100%;
 }
 @media (min-width: 40em) {
@@ -1350,23 +1349,14 @@ body {
 }
 
 .item-inside-1 {
-  background-image: url("../img/project-1.jpg");
-  background-position: 50% 100%;
-  background-size: 350%;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-  .item-inside-1 {
-    background-image: url("../img/project-1h.jpg");
-  }
-}
-@media (min-width: 40em) {
-  .item-inside-1 {
-    background-size: 150%;
-  }
+  background-position: 50% 60%;
+  background-size: cover;
 }
 
-.post-inside-1 {
-  background-image: url("../img/post-1.jpg");
+@media (min-width: 40em) {
+  .item-inside-1 {
+    background-size: cover;
+  }
 }
 
 #layout-grid:checked ~ .rk-portfolio,
@@ -1958,7 +1948,7 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  font-size: .875rem;
+  font-size: 1.275rem;
   font-weight: 700;
   letter-spacing: .5px;
   list-style: none;
