@@ -9,6 +9,7 @@ export class VehiculosService {
 
   cargando = true;
   vehiculos: InfoVehiculo[] = [];
+  vehiculosFiltrados: InfoVehiculo[] = [];
 
   constructor( private http: HttpClient) {
     this.cargarVehiculos();
@@ -19,5 +20,14 @@ export class VehiculosService {
       this.vehiculos = resp;
       this.cargando = false;
     });
+  }
+
+  public buscarVehiculos(cadena: string) {
+    this.vehiculosFiltrados = this.vehiculos.filter ( vehiculo => {
+      this.cargando = false;
+      return true;
+    });
+
+    console.log(this.vehiculosFiltrados);
   }
 }
